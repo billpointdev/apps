@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    
+        if (/iPhone|iPad|iPod/i.test(userAgent)) {
+            window.location.href = "https://apps.apple.com/ng/app/9ja-billpoint/id6742237382"; // iOS App Store Link
+        } else if (/android/i.test(userAgent)) {
+            window.location.href = "https://play.google.com/store/apps/details?id=co.billpoint.app&pli=1"; // Google Play Link
+        } else {
+            window.location.href = "https://billpoint.co"; // Fallback (e.g., a landing page)
+        }
+    </script>
+    
+</body>
+</html>
